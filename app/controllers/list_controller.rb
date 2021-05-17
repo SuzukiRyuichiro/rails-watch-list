@@ -4,9 +4,11 @@ class ListController < ApplicationController
   end
 
   def show
+    raise
   end
 
   def new
+    raise
   end
 
   def create
