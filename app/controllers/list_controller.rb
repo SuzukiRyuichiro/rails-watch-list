@@ -1,16 +1,22 @@
 class ListController < ApplicationController
   def index
-    raise
+    @lists = List.all
   end
 
   def show
-    raise
+    @list = List.find(params[:id])
   end
 
   def new
-    raise
+    @list = List.new()
   end
 
   def create
+  end
+
+  private
+
+  def list_params
+    params.require(:list).permit()
   end
 end
