@@ -1,5 +1,6 @@
 <h1><%= @list.name %></h1>
-<% @list.movies.each do |movie| %>
-  <h3><%= movie.title %></h3>
-  <h4><%= movie.rating %></h4>
-<% end %>
+<div class="cards">
+  <% @list.movies.each do |movie| %>
+    <%= render 'shared/movie_card', movie: movie %>
+  <% end %>
+</div>
