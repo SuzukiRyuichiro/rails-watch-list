@@ -1,1 +1,6 @@
 <%= render "shared/banner" %>
+<div class="cards">
+  <% @lists.each do |list| %>
+    <%= render "shared/list_card", list: list %>
+  <% end %>
+</div>
