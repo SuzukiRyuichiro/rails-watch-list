@@ -1,2 +1,9 @@
-<h1>Bookmark#new</h1>
-<p>Find me in app/views/bookmark/new.html.erb</p>
+<div class="form-card">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <%= f.input :comment, label: 'Any comment' %>
+    <%= f.input :movie, as: :select, collection: Movie.all, prompt: 'Select Movie', label: false %>
+    <div class="submit-button-wrap">
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>

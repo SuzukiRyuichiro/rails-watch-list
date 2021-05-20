@@ -1,0 +1,7 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= list.movies.sample&.poster_url || 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' %>);">
+  <div class="container">
+    <h1><%= list.name %></h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <%= link_to "New Bookmark",  new_list_bookmark_path(list.id), class: "btn btn-primary" %>
+  </div>
+</div>
