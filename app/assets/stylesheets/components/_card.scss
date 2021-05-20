@@ -19,6 +19,19 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
+.form-card {
+  width: 40%;
+  box-shadow: 2px 2px 20px #3f3f3f40;
+  border-radius: 5px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13%;
+  .submit-button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

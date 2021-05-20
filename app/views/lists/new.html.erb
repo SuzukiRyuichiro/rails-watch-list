@@ -1,5 +1,9 @@
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name, label: 'Name of the list' %>
-  <%= f.input :photo, as: :file, label: 'Photo' %>
-  <%= f.button :submit %>
-<% end %>
+<div class="form-card">
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, label: 'Name of the list' %>
+    <%= f.input :photo, as: :file, label: 'Photo' %>
+    <div class="submit-button-wrap">
+      <%= f.button :submit, class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
