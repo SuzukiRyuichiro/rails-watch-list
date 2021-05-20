@@ -1,7 +1,5 @@
 <%= simple_form_for @list do |f| %>
-  <%= f.input :username, label: 'Your username please', error: 'Username is mandatory, please specify one' %>
-  <%= f.input :password, hint: 'No special characters.' %>
-  <%= f.input :email, placeholder: 'user@domain.com' %>
-  <%= f.input :remember_me, inline_label: 'Yes, remember me' %>
+  <%= f.input :name, label: 'Name of the list' %>
+  <%= f.input :photo, as: :file, label: 'Photo' %>
   <%= f.button :submit %>
 <% end %>
