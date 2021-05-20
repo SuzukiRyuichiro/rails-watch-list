@@ -12,12 +12,17 @@ class ListsController < ApplicationController
   end
 
   def create
-    raise
+    @list = List.new(list_params)
+    if @list.save
+      redirect_to lists_path
+    else
+      render 'new'
+    end
   end
 
   private
 
   def list_params
-    params.require(:list).permit()
+    params.require(:list).permit(:name, :photo)
   end
 end
